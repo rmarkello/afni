@@ -1,0 +1,73 @@
+{
+    "id": "afni_niml",
+    "title": "AFNI NIML",
+    "description": "An AFNI NIML object",
+    "type": "object",
+    "properties": {
+        "AFNI_attributes": {
+            "type": "object",
+            "properties": {
+                "@self_idcode": {
+                    "description": "",
+                    "type": "string"
+                },
+                "@NIfTI_nums": {
+                    "description": "",
+                    "type": "string",
+                    "minLength": 11
+                },
+                "@ni_form": {
+                    "description": "",
+                    "type": "string",
+                    "enum": [ "ni_group", "text", "binary", "base64" ]
+                },
+                "AFNI_atr": {
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "@ni_type": {
+                                "description": "",
+                                "type": "string",
+                                "enum": [ "String", "int", "float" ]
+                            },
+                            "@ni_dimen": {
+                                "description": "",
+                                "type": "integer"
+                            },
+                            "@atr_name": {
+                                "description": "",
+                                "type": "string"
+                            },
+                            "@atr_strtype": {
+                                "description": "",
+                                "type": "string",
+                                "enum": [ "delim-string", "niml-string", "byte-string" ]
+                            },
+                            "@atr_delim": {
+                                "description": "",
+                                "type": "string",
+                                "minLength": 1
+                            },
+                            "AFNI_attributes": {
+                                "$ref": "#"
+                            }
+                        },
+                        "if": {
+                            "properties": {
+                              "@atr_strtype": { "const": "delim-string" }
+                            },
+                            "required": ["@atr_strtype"]
+                        },
+                        "then": {
+                            "required": ["@atr_delim"]
+                        },
+                        "required": [ "@ni_type", "@ni_dimen", "@atr_name" ]
+                    }
+                }
+            },
+            "required": [ "AFNI_atr" ]
+        }
+    }
+}

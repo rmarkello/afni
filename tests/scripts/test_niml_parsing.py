@@ -1,14 +1,19 @@
-import xml.etree.ElementTree as ET
 import nibabel as nb
 from pathlib import Path
 import subprocess as sp
+import xml.etree.ElementTree as ET
+
 from .utils.misc import try_to_import_afni_module
 
 nml = try_to_import_afni_module("niml_parsing")
-scans_dir = Path("AFNI_data6/afni")
+scans_dir = Path("afni_ci_test_data/AFNI_data6/afni")
 
+head_files = [
+    x.absolute().relative_to(Path("afni_ci_test_data").absolute())
+    for x in scans_dir.glob("**/*.HEAD")
+]
 data_paths = {
-    "head_files": [x for x in scans_dir.glob("*.HEAD") if x.is_file()],
+    "head_files": head_files,
     "atlas_niml": "mini_data/AFNI_atlas_spaces.niml",
 }
 
@@ -64,6 +69,11 @@ def test_afni_extension_parsing_in_head_converted(data):
         extension_niml = get_afni_niml("test.nii.gz")
 
         parsed_nii_niml = nml.convert_afni_extension_niml(extension_niml)
+
+        # test Python --> NIML --> Python conversion
+        generated_nii_niml = nml.make_afni_niml(parsed_nii_niml)
+        roundtrip_nii_niml = nml.convert_afni_extension_niml(generated_nii_niml)
+        assert roundtrip_nii_niml == parsed_nii_niml
 
 
 # # Parse a nifti extension niml
