@@ -1,0 +1,363 @@
+<?xml version='1.0' ?>
+<AFNI_attributes
+  self_idcode="AFN_Ema6AwPtt9waUMuAGNztGg"
+  NIfTI_nums="33,41,25,3,1,4"
+  ni_form="ni_group" >
+<AFNI_atr
+  ni_type="String"
+  ni_dimen="1"
+  atr_name="HISTORY_NOTE" >
+ "[rmarkello@misiclab-rdm: Mon Nov 11 11:59:39 2019] {AFNI_19.2.23:linux_ubuntu_16_64} 3dcopy example4d+orig /home/rmarkello/Desktop/test.nii.gz"
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="String"
+  ni_dimen="1"
+  atr_name="TYPESTRING" >
+ "3DIM_HEAD_ANAT"
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="String"
+  ni_dimen="2"
+  atr_name="ATLAS_LABEL_TABLE"
+  atr_strtype="niml-string" >
+  <AFNI_attributes
+    ni_form="ni_group"
+    group_name="atlas-table" >
+  <AFNI_atr
+    ni_type="String"
+    ni_dimen="4"
+    atr_name="Left Brodmann area 41"
+    atr_strtype="niml-string" >
+   <AFNI_attributes
+     ni_form="ni_group" >
+   <AFNI_atr
+     ni_type="int"
+     ni_dimen="1"
+     atr_name="VAL" >
+    317
+   </AFNI_atr>
+
+   <AFNI_atr
+     ni_type="int"
+     ni_dimen="1"
+     atr_name="OKEY" >
+    317
+   </AFNI_atr>
+
+   <AFNI_atr
+     ni_type="int"
+     ni_dimen="1"
+     atr_name="GYoAR" >
+    4
+   </AFNI_atr>
+
+   <AFNI_atr
+     ni_type="float"
+     ni_dimen="3"
+     atr_name="COG" >
+    47.000000
+    26.000000
+    11.000000
+   </AFNI_atr>
+   </AFNI_attributes>
+  </AFNI_atr>
+  <AFNI_atr
+    ni_type="String"
+    ni_dimen="4"
+    atr_name="Right Brodmann area 47"
+    atr_strtype="niml-string" >
+   <AFNI_attributes
+     ni_form="ni_group" >
+   <AFNI_atr
+     ni_type="int"
+     ni_dimen="123"
+     atr_name="VAL" >
+    317
+   </AFNI_atr>
+
+   <AFNI_atr
+     ni_type="int"
+     ni_dimen="123"
+     atr_name="OKEY" >
+    317
+   </AFNI_atr>
+
+   <AFNI_atr
+     ni_type="int"
+     ni_dimen="4"
+     atr_name="GYoAR" >
+    4
+   </AFNI_atr>
+
+   <AFNI_atr
+     ni_type="float"
+     ni_dimen="3"
+     atr_name="COG" >
+    -38.000000
+    -24.000000
+    -11.000000
+   </AFNI_atr>
+   </AFNI_attributes>
+   </AFNI_atr>
+  </AFNI_attributes>
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="String"
+  ni_dimen="1"
+  atr_name="IDCODE_STRING" >
+ "AFN_Ema6AwPtt9waUMuAGNztGg"
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="String"
+  ni_dimen="1"
+  atr_name="IDCODE_DATE" >
+ "Mon Nov 11 11:59:39 2019"
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="int"
+  ni_dimen="8"
+  atr_name="SCENE_DATA" >
+ 0
+ 2
+ 0
+ -999
+ -999
+ -999
+ -999
+ -999
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="String"
+  ni_dimen="1"
+  atr_name="LABEL_1" >
+ "zyxt"
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="String"
+  ni_dimen="1"
+  atr_name="LABEL_2" >
+ "zyxt"
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="String"
+  ni_dimen="1"
+  atr_name="DATASET_NAME" >
+ "zyxt"
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="int"
+  ni_dimen="3"
+  atr_name="ORIENT_SPECIFIC" >
+ 0
+ 3
+ 4
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="float"
+  ni_dimen="3"
+  atr_name="ORIGIN" >
+ -49.5
+ -82.312
+ -52.3511
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="float"
+  ni_dimen="3"
+  atr_name="DELTA" >
+ 3
+ 3
+ 3
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="float"
+  ni_dimen="12"
+  atr_name="IJK_TO_DICOM" >
+ 3
+ 0
+ 0
+ -49.5
+ 0
+ 3
+ 0
+ -82.312
+ 0
+ 0
+ 3
+ -52.3511
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="float"
+  ni_dimen="12"
+  atr_name="IJK_TO_DICOM_REAL" >
+ 3
+ 0
+ 0
+ -49.5
+ 0
+ 3
+ 0
+ -82.312
+ 0
+ 0
+ 3
+ -52.3511
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="float"
+  ni_dimen="6"
+  atr_name="BRICK_STATS" >
+ 0
+ 13722
+ 0
+ 10051
+ 0
+ 9968
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="int"
+  ni_dimen="8"
+  atr_name="TAXIS_NUMS" >
+ 3
+ 25
+ 77002
+ -999
+ -999
+ -999
+ -999
+ -999
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="float"
+  ni_dimen="8"
+  atr_name="TAXIS_FLOATS" >
+ 0
+ 3
+ 0
+ -52.3511
+ 3
+ -999999
+ -999999
+ -999999
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="float"
+  ni_dimen="25"
+  atr_name="TAXIS_OFFSETS" >
+ 0.3260869
+ 1.826087
+ 0.3913043
+ 1.891304
+ 0.4565217
+ 1.956521
+ 0.5217391
+ 2.021739
+ 0.5869564
+ 2.086956
+ 0.6521738
+ 2.152174
+ 0.7173912
+ 2.217391
+ 0.7826086
+ 2.282609
+ 0.8478259
+ 2.347826
+ 0.9130433
+ 2.413044
+ 0.9782607
+ 2.478261
+ 1.043478
+ 2.543479
+ 1.108696
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="int"
+  ni_dimen="8"
+  atr_name="DATASET_RANK" >
+ 3
+ 3
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="int"
+  ni_dimen="5"
+  atr_name="DATASET_DIMENSIONS" >
+ 33
+ 41
+ 25
+ 0
+ 0
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="int"
+  ni_dimen="3"
+  atr_name="BRICK_TYPES" >
+ 1
+ 1
+ 1
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="float"
+  ni_dimen="3"
+  atr_name="BRICK_FLOAT_FACS" >
+ 0
+ 0
+ 0
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="String"
+  ni_dimen="1"
+  atr_strtype="delim-string"
+  atr_delim="~"
+  atr_name="BRICK_LABS" >
+ "#0~#1~#2"
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="String"
+  ni_dimen="1"
+  atr_name="BRICK_KEYWORDS" >
+ "~~"
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="String"
+  ni_dimen="1"
+  atr_name="TEMPLATE_SPACE" >
+ "ORIG"
+</AFNI_atr>
+
+<AFNI_atr
+  ni_type="int"
+  ni_dimen="1"
+  atr_name="INT_CMAP" >
+ 0
+</AFNI_atr>
+
+</AFNI_attributes>
